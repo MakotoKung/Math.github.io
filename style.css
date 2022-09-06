@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.BG-2{
+    background-color: #695E93;
+}
+.BG{
+    background:  #281C2D;
+}
+.main{ 
+    opacity: 0;
+}
+@keyframes lock {
+    0%{ 
+        transform: translateX(-100px);
+        transition: 1s;
+        
+    }
+    50%{
+        transform: translateX(10px);
+        transition: .5s;
+    }
+    80%{
+        transform: translateX(50px);
+        transition: 0.5s;
+    }
+    100%{
+        transform: translateX(0);
+       
+    }
+}
+
+.rec{ 
+    position: fixed;
+    top: 8%;
+    left: 36%;
+    width: 25%;
+    height: 15%;
+    border-radius: 50px;
+    background-color: rgb(43, 43, 43);
+    animation: lock 3s;
+    animation-delay: 8.2s;
+    transition: 0.5s;
+}
+.matrix {
+    position: fixed;
+    top: 5%;
+    left: 37%;
+    padding: 5px;
+    font-size: 120px;
+    color: #f0c1c0;
+    display: flex;
+    animation-iteration-count: infinite;
+    z-index: 99;
+}
+.M {
+   animation: scale 3s;
+   transition: 1.2s;
+   
+
+}
+@keyframes scale { 
+    0%{
+        transform: scale(5);
+        color: #85D2D0;
+    }
+    50%{
+        transition: 8s;
+    }
+    100%{
+        transform: scale(1);
+        color: #F4B9B8;
+    }
+}
+@keyframes spin {
+    from { 
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+.M:nth-child(1){
+    animation-delay: 2.1s;
+    
+
+}
+.M:nth-child(2){
+    animation-delay: 2.8s;
+
+}
+.M:nth-child(3){
+    animation-delay: 3.4s;
+
+}
+.M:nth-child(4){
+    animation-delay: 4s;
+
+}
+.M:nth-child(5){
+    animation-delay: 4.8s;
+}
+.M:nth-child(6){
+    animation-delay: 6s;
+
+}
+.cir { 
+    position: fixed;
+    top: 5%;
+    left: 2%;
+    animation: spin 20s;
+    animation-iteration-count: infinite;
+}
+
+.cir2{
+    position: fixed;
+    left: 85%;
+    top: 75%;
+    animation: spin 20s ;
+    animation-iteration-count: infinite;
+}
+.pic{ 
+    position: absolute;
+    width: 15%;
+    top: 30%;
+    left: 20%;
+}
+.pic2{
+    position: absolute;
+    width: 15%;
+    left: 60%;
+    top: 30%;
+}
+.button{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: #85D2D0;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+    top: 65%;
+    left: 25%;
+}
+.button-2{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: #85D2D0;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+    top: 65%;
+    left: 65%;
+}
+@media screen and (max-width:1440px) {
+    .rec{
+        width: 34%;
+        left: 35%;
+    }
+    .button{
+        top: 58%;
+    }
+    .button-2{
+        top: 58%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .M{
+        font-size: 100px;
+    }
+    .rec{
+        width: 39%;
+    }
+    .button{
+        top: 65%;
+        left: 28%;
+    }
+    .button-2{
+        top: 65%;
+        left: 68%;
+    }
+    .pic{
+        width: 25%;
+    }
+    .pic2{
+        width: 25%;
+    }
+}
+@media screen and (max-width:768px) {
+    .cir{
+        width: 20%;
+    }
+    .cir2{
+        left: 70%;
+    }
+    .rec{
+        width: 41%;
+    }
+    .M{
+        font-size: 80px;
+        
+    }
+    .matrix{
+        top: 8%;
+    }
+    .pic{
+        width: 30%;
+    }
+    .pic-2{
+        width: 45%;
+    }
+    .button{
+        top: 55%;
+    }
+    .button-2{
+        top: 55%;
+    }
+}
+@media screen and (max-width:425px){
+    .rec{
+        width: 48%;
+        height: 10%;
+        left: 30%;
+    }
+    .M{
+        font-size: 40px;
+    }
+    .matrix{
+        left: 35%;
+        top: 9%;
+    }
+    .cir{
+        width: 25%;
+        top: 0%;
+    }
+    .cir2{
+        width: 25%;
+        left: 80%;
+        top: 80%;
+    }
+    .pic{
+        width: 40%;
+        left: 30%;
+        top: 25%;
+    }
+    .pic2{
+        width: 45%;
+        top: 55%;
+        left: 30%;
+    }
+    .button{
+        top: 45%;
+        left: 40%;
+    }
+    .button-2{
+        top: 75%;
+        left: 40%;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .rec{
+
+    }
+    .M{
+        font-size: 30px;
+    }
+    .cir2{
+        left: 70%;
+    }
+    .button{
+        left: 35%;
+        top: 41%;
+    }
+    .button-2{
+        left: 35%;
+        top: 70%;
+    }
+    .pic2{
+        top: 50%;
+    }
+}
