@@ -44,8 +44,7 @@ body{
 }
 .fade_in{
     animation: fade 3s;
-    
-    
+
 }
 
 .rec{ 
@@ -62,7 +61,7 @@ body{
 }
 .matrix {
     position: fixed;
-    top: 5%;
+    top: 8%;
     left: 37%;
     padding: 5px;
     font-size: 120px;
