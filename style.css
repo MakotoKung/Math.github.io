@@ -3,6 +3,7 @@
 }
 body{
     overflow-x: hidden;
+    font-family:var(--bs-font-sans-serif);
 }
 .BG-2{
     background-color: #695E93;
@@ -32,12 +33,26 @@ body{
        
     }
 }
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    
+}
+}
+.fade_in{
+    animation: fade 3s;
+    
+    
+}
 
 .rec{ 
     position: fixed;
-    top: 5%;
+    top: 8%;
     left: 36%;
-    width: 25%;
+    width: 26%;
     height: 15%;
     border-radius: 50px;
     background-color: rgb(43, 43, 43);
@@ -228,7 +243,7 @@ body{
     .rec{
         width: 48%;
         height: 10%;
-        left: 27%;
+        left: 30%;
     }
     .M{
         font-size: 40px;
@@ -268,7 +283,7 @@ body{
 }
 @media screen and (max-width:320px) {
     .rec{
-        left: 25%;
+
     }
     .M{
         font-size: 30px;
