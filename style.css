@@ -228,7 +228,7 @@ body{
     .rec{
         width: 48%;
         height: 10%;
-        left: 30%;
+        left: 27%;
     }
     .M{
         font-size: 40px;
@@ -268,7 +268,7 @@ body{
 }
 @media screen and (max-width:320px) {
     .rec{
-
+        left: 25%;
     }
     .M{
         font-size: 30px;
