@@ -3,7 +3,7 @@
 }
 body{
     overflow-x: hidden;
-    font-family:var(--bs-font-sans-serif);
+    font-family: sans-serif;
 }
 .BG-2{
     background-color: #695E93;
